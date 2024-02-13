@@ -1,11 +1,12 @@
-import { HStack, Image, Text } from "@chakra-ui/react";
+import { HStack, Image } from "@chakra-ui/react";
 import logo from "../assets/logo.webp";
+import ColorToggle from "./ColorToggle";
 
 function NavBar() {
   return (
-    <HStack>
+    <HStack justifyContent="space-between" padding={{ base: "10px" }}>
       <Image src={logo} boxSize={{ base: "40px", md: "60px" }} />
-      <Text fontSize={{ base: "lg", md: "2xl" }}>GameHub</Text>
+      <ColorToggle />
     </HStack>
   );
 }
